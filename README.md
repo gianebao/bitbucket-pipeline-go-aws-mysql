@@ -6,7 +6,7 @@ Extended from:
 [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) [Go/Golang](https://golang.org/) [Amazon AWS](https://aws.amazon.com/cli/) [MySQL](https://www.mysql.com) (with built in [Goose Migrator](https://bitbucket.org/liamstask/goose/))
 
 Docker image based on [golang](https://hub.docker.com/_/golang/)
-Docker image at [gianebao/bitbucket-pipeline-go-mysql](https://hub.docker.com/r/gianebao/bitbucket-pipeline-go-mysql/)
+Docker image at [gianebao/bitbucket-pipeline-go-aws-mysql](https://hub.docker.com/r/gianebao/bitbucket-pipeline-go-aws-mysql/)
 
 Built in's:
   - ENV GOOSE_DIR
@@ -19,7 +19,7 @@ Built in's:
 Sample `bitbucket-pipelines.yml`:
 
 ```YAML
-image: gianebao/bitbucket-pipeline-go-mysql
+image: gianebao/bitbucket-pipeline-go-aws-mysql
 pipelines:
   default:
     - step:
